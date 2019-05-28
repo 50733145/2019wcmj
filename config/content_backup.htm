@@ -737,3 +737,66 @@ ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
 <p><br/>W14 &lt;&lt; <a href="/get_page/ROC%20Flag/W14.html">Previous</a></p>
+<p><canvas height="400" id="plotarea2" width="600"></canvas></p>
+<script type="text/python">
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/4
+circle_y = flag_h/4
+# 先畫滿地紅
+ctx.fillStyle='rgb(150, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+# 再畫青天
+ctx.fillStyle='rgb(0, 0, 255)'
+ctx.fillRect(0,0,flag_w/2,flag_h/2)
+# 畫十二道光芒白日
+ctx.beginPath()
+star_radius = flag_w/8
+angle = 0
+for i in range(24):
+    angle += 5*math.pi*2/12
+    toX = circle_x + math.cos(angle)*star_radius
+    toY = circle_y + math.sin(angle)*star_radius
+    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i):
+        ctx.lineTo(toX, toY)
+    else:
+        ctx.moveTo(toX, toY)
+ctx.closePath()
+# 將填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+# 白日:藍圈
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為藍色
+ctx.fillStyle = 'rgb(0, 0, 149)'
+ctx.fill()
+# 白日:白心
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+</script>
+<h1>校園軟體下載</h1>
+<ol>
+<li>首次使用須先安裝SSL VPN 程式(Juniper Networks Connect) 請依您的作業系統版本下載使用者端程式https://drive.narlabs.org.tw/navigate/s/8F663EC143514CF295FCB53B5B228956GUY<img alt="" height="216" src="/images/ShareX_3x5Fqs3fKC.png" width="361"/></li>
+<li>
+<p><span>"點選搜尋" &gt; 輸入程式名稱為Network Connect&gt; 點擊Network Connect</span></p>
+<span><img alt="" height="418" src="/images/chrome_GBuy4vkGyX.png" width="265"/></span></li>
+<li> 進行身份驗證(可由Juniper Network Connect或IE，請擇一進行身分認證) 執行程式後，於"登入頁面"輸入網址 :<span> </span><a href="https://sslvpn9.twaren.net/nfu">https://sslvpn9.twaren.net/nfu<img alt="" height="285" src="/images/chrome_Hm1wYYBx3d.png" width="284"/></a><span></span></li>
+<li>輸入使用者帳號密碼，請填入校務行政AD帳號及密碼。請完整填寫您在校務行政AD帳號以及密碼，否則國網中心找不到對象進行身份確認<img alt="" height="331" src="/images/chrome_475ml3osEp.png" width="335"/></li>
+</ol>
