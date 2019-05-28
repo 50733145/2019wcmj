@@ -799,4 +799,20 @@ ctx.fill()
 <span><img alt="" height="418" src="/images/chrome_GBuy4vkGyX.png" width="265"/></span></li>
 <li> 進行身份驗證(可由Juniper Network Connect或IE，請擇一進行身分認證) 執行程式後，於"登入頁面"輸入網址 :<span> </span><a href="https://sslvpn9.twaren.net/nfu">https://sslvpn9.twaren.net/nfu<img alt="" height="285" src="/images/chrome_Hm1wYYBx3d.png" width="284"/></a><span></span></li>
 <li>輸入使用者帳號密碼，請填入校務行政AD帳號及密碼。請完整填寫您在校務行政AD帳號以及密碼，否則國網中心找不到對象進行身份確認<img alt="" height="331" src="/images/chrome_475ml3osEp.png" width="335"/></li>
+<li><span>螢幕右下角顯示"已連接"，表示已成功連線</span><img alt="" height="198" src="/images/chrome_jr5cpIko2Z.png" width="310"/></li>
 </ol>
+<h1>w15</h1>
+<img alt="" height="232" src="/images/chrome_bt5s8E9wwY.png" width="272"/>
+<p>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</p>
+<p>1. 安裝最新版的 Virtualbox</p>
+<p>2. 建立 Ubuntu 18.04 虛擬主機</p>
+<p>3. 以網路卡橋接啟動 Ubuntu 伺服器</p>
+<p>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</p>
+<p>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</p>
+<p>6. 以 Windows 10 下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</p>
+<p>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</p>
+<p>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</p>
+<p>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</p>
+<p>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</p>
+<p>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</p>
+<p>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動</p>

@@ -78,9 +78,18 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='簡介.html'>簡介</a><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='git http 與 ssh.html'>git http 與 ssh</a><li><a href='目錄結構.html'>目錄結構</a><li><a href='頁面編輯.html'>頁面編輯</a><ul><li><a href='插入程式碼.html'>插入程式碼</a><ul><li><a href='Java 程式碼.html'>Java 程式碼</a><li><a href='Python 程式碼.html'>Python 程式碼</a><li><a href='C或C++程式碼.html'>C或C++程式碼</a><li><a href='Lua 程式碼.html'>Lua 程式碼</a><li><a href='Javascript 程式碼.html'>Javascript 程式碼</a><li><a href='Html 原始碼.html'>Html 原始碼</a></li></li></ul></ul><li><a href='網際簡報.html'>網際簡報</a><li><a href='網誌編輯.html'>網誌編輯</a><li><a href='已知錯誤.html'>已知錯誤</a><li><a href='期中影片.html'>期中影片</a><li><a href='小遊戲.html'>小遊戲</a><li><a href='骰子.html'>骰子</a><li><a href='期末報告.html'>期末報告</a><ul><li><a href='倉儲改版.html'>倉儲改版</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a></li></ul><li><a href='ROC Flag.html'>ROC Flag</a><li><a href='校園軟體下載.html'>校園軟體下載</a><li><a href='w15.html'>w15</a></li></ul></nav><section><div id="tipue_search_content"> <a href='week1.html'>Next</a> >> week1<br /><h1>簡介</h1>
-<p>首先是這個衝突 (這是新版本內容)</p>
-<p>終於要來處理衝突了 (這是產生衝突的舊版本內容)</p>
-<p>CMSimfly (<a href="https://github.com/chiamingyen/cmsimfly">https://github.com/chiamingyen/cmsimfly)</a> 是一套簡單的網際內容管理系統, 採用 Flask 網際框架, 以 Beautifulsoup 解讀分頁內容.</p>
-<p><img alt="" height="471" src="./../images/gocycle4.png" width="587"/></p>
-<br /> <a href='week1.html'>Next</a> >> week1</div></section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='簡介.html'>簡介</a><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='git http 與 ssh.html'>git http 與 ssh</a><li><a href='目錄結構.html'>目錄結構</a><li><a href='頁面編輯.html'>頁面編輯</a><ul><li><a href='插入程式碼.html'>插入程式碼</a><ul><li><a href='Java 程式碼.html'>Java 程式碼</a><li><a href='Python 程式碼.html'>Python 程式碼</a><li><a href='C或C++程式碼.html'>C或C++程式碼</a><li><a href='Lua 程式碼.html'>Lua 程式碼</a><li><a href='Javascript 程式碼.html'>Javascript 程式碼</a><li><a href='Html 原始碼.html'>Html 原始碼</a></li></li></ul></ul><li><a href='網際簡報.html'>網際簡報</a><li><a href='網誌編輯.html'>網誌編輯</a><li><a href='已知錯誤.html'>已知錯誤</a><li><a href='期中影片.html'>期中影片</a><li><a href='小遊戲.html'>小遊戲</a><li><a href='骰子.html'>骰子</a><li><a href='期末報告.html'>期末報告</a><ul><li><a href='倉儲改版.html'>倉儲改版</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a></li></ul><li><a href='ROC Flag.html'>ROC Flag</a><li><a href='校園軟體下載.html'>校園軟體下載</a><li><a href='w15.html'>w15</a></li></ul></nav><section><div id="tipue_search_content">校園軟體下載 << <a href='校園軟體下載.html'>Previous</a> <br /><h1>w15</h1>
+<p><img alt="" height="486" src="./../images/chrome_bt5s8E9wwY.png" width="570"/></p>
+<p>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</p>
+<p>1. 安裝最新版的 Virtualbox</p>
+<p>2. 建立 Ubuntu 18.04 虛擬主機</p>
+<p>3. 以網路卡橋接啟動 Ubuntu 伺服器</p>
+<p>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</p>
+<p>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</p>
+<p>6. 以 Windows 10 下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</p>
+<p>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</p>
+<p>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</p>
+<p>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</p>
+<p>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</p>
+<p>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</p>
+<p>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動</p><br />校園軟體下載 << <a href='校園軟體下載.html'>Previous</a> </div></section></div></body></html>
